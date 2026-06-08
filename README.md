@@ -1,5 +1,46 @@
 # 🎓 نتائج الطلاب — أم رماد الثانوية المشتركة
 
+
+
+![Students](https://img.shields.io/badge/الطلاب-88%20طالب-gold?style=for-the-badge&logo=graduation-cap)
+
+
+
+
+![Year](https://img.shields.io/badge/العام_الدراسي-2025%2F2026-blue?style=for-the-badge&logo=calendar)
+
+
+
+
+![HTML](https://img.shields.io/badge/HTML5-Single_File-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+
+
+
+![CSS](https://img.shields.io/badge/CSS3-Styled-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+
+
+
+![JS](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+
+
+
+![No Server](https://img.shields.io/badge/Server-Not_Required-success?style=for-the-badge&logo=checkmarx)
+
+
+
+
+![Responsive](https://img.shields.io/badge/Responsive-Mobile_Ready-brightgreen?style=for-the-badge&logo=mobile)
+
+
+
+
+![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge&logo=lock)
+
+
+
 > نظام عرض نتائج الصف الأول الثانوي للعام الدراسي 2025/2026 — واجهة ويب احترافية للبحث عن النتائج بالرقم القومي وتحميلها كصورة.
 
 ---
@@ -32,7 +73,6 @@
 ```javascript
 
 
----
 
 ## 🎨 نظام تلوين الدرجات
 
