@@ -794,6 +794,17 @@
         } catch(e) {
             console.error(e);
             alert('حدث خطأ أثناء التحميل.');
-        }
+         }
         dlBtn.innerHTML = orig;
-        dl
+        dlBtn.disabled = false;
+    }
+
+    btn.addEventListener('click', e => { e.preventDefault(); search(); });
+    input.addEventListener('keypress', e => { if (e.key === 'Enter') { e.preventDefault(); search(); } });
+    input.addEventListener('input', function() { this.value = this.value.replace(/\D/g,'').slice(0,14); });
+    dlBtn.addEventListener('click', downloadImg);
+
+})();
+</script>
+</body>
+</html>
