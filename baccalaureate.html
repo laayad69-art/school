@@ -14,7 +14,8 @@
         <p>الإعدادية والثانوية - قرية أم رماد، الزقازيق، الشرقية</p>
     </header>
     <nav>
-        <ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ الأقسام</button>
+        <ul id="nav-menu">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="about.html">عن المدرسة</a></li>
             <li><a href="management.html">إدارة المدرسة</a></li>
@@ -124,6 +125,9 @@
         <p style="margin-top: 10px; font-size: 0.9rem;">تابعنا على <a href="https://www.facebook.com/share/1ChkDVqz6g/" target="_blank">فيسبوك</a></p>
     </footer>
     <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('show');
+        }
         var acc = document.getElementsByClassName("accordion");
         var i;
         for (i = 0; i < acc.length; i++) {
