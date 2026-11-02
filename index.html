@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -14,7 +15,8 @@
         <p>الإعدادية والثانوية - قرية أم رماد، الزقازيق، الشرقية</p>
     </header>
     <nav>
-        <ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ الأقسام</button>
+        <ul id="nav-menu">
             <li><a href="index.html" class="active">الرئيسية</a></li>
             <li><a href="about.html">عن المدرسة</a></li>
             <li><a href="management.html">إدارة المدرسة</a></li>
@@ -39,5 +41,10 @@
         <p>جميع الحقوق محفوظة © مجمع مدارس الشهيد علاء زكي زكي الإعدادية والثانوية 2027</p>
         <p style="margin-top: 10px; font-size: 0.9rem;">تابعنا على <a href="https://www.facebook.com/share/1ChkDVqz6g/" target="_blank">فيسبوك</a></p>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
