@@ -59,13 +59,27 @@ header h1 {
 }
 header p { font-size: 1rem; opacity: 0.85; position: relative; z-index: 1; }
 
-/* ===== Nav ===== */
+/* ===== Nav (شريط التنقل) ===== */
 nav { 
     background-color: var(--blue-mid);
     position: sticky; top: 0; z-index: 1000; 
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     border-bottom: 2px solid rgba(212, 175, 55, 0.4);
 }
+
+/* زرار المنيو (يظهر بس على الموبايل) */
+.menu-toggle {
+    display: none; /* مخفي على الكمبيوتر */
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: right;
+}
+
 nav ul { 
     display: flex; justify-content: center; 
     flex-wrap: wrap; list-style: none; padding: 8px 10px;
@@ -300,19 +314,24 @@ footer a:hover { color: white; }
     header img { width: 90px; height: 90px; }
     header p { font-size: 0.85rem; }
 
-    /* القائمة 3 أزرار في كل صف */
+    /* إظهار زرار المنيو */
+    .menu-toggle { display: block; }
+
+    /* إخفاء القائمة بشكل افتراضي */
     nav ul { 
-        display: grid; 
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 6px; 
-        padding: 8px;
+        display: none; 
+        flex-direction: column;
+        padding: 10px;
     }
-    nav ul li { margin: 0; }
+    /* إظهار القائمة عند الضغط */
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li { margin: 3px 0; text-align: center; }
     nav ul li a { 
         display: block; 
-        text-align: center; 
-        padding: 8px 4px; 
-        font-size: 0.75rem; 
+        padding: 10px; 
+        font-size: 0.9rem; 
         border-radius: 8px;
     }
 
@@ -327,20 +346,20 @@ footer a:hover { color: white; }
 
     /* الأكورديون - تصغير وتظبيط */
     .accordion { 
-        padding: 12px 40px 12px 12px; 
-        font-size: 0.85rem; 
+        padding: 10px 35px 10px 10px; 
+        font-size: 0.8rem; 
         line-height: 1.4; 
         margin-bottom: 8px;
     }
-    .accordion::after { left: 12px; font-size: 1.2rem; }
-    .panel { padding: 0 12px; }
-    .panel h3 { font-size: 0.95rem; margin-top: 10px; }
-    .panel p, .panel ul { font-size: 0.82rem; padding: 6px 0; }
-    .panel ul { padding-right: 12px; }
+    .accordion::after { left: 10px; font-size: 1.1rem; }
+    .panel { padding: 0 10px; }
+    .panel h3 { font-size: 0.9rem; margin-top: 8px; }
+    .panel p, .panel ul { font-size: 0.78rem; padding: 5px 0; }
+    .panel ul { padding-right: 10px; }
 
     /* الجدول */
-    table { font-size: 0.75rem; display: block; overflow-x: auto; white-space: nowrap; }
-    th, td { padding: 8px 6px; }
+    table { font-size: 0.7rem; display: block; overflow-x: auto; white-space: nowrap; }
+    th, td { padding: 6px 5px; }
     table::before {
         content: '← حرك الجدول أفقياً لرؤية المزيد →';
         display: block; text-align: center; font-size: 0.7rem;
@@ -382,7 +401,7 @@ footer a:hover { color: white; }
 @media (max-width: 400px) {
     .grades-grid { grid-template-columns: 1fr; }
     header h1 { font-size: 1.1rem; }
-    nav ul li a { font-size: 0.7rem; padding: 6px 3px; }
+    nav ul li a { font-size: 0.8rem; padding: 8px; }
     .avatar-frame { width: 110px; height: 110px; }
     .deputy-card .avatar-frame { width: 70px; height: 70px; }
-                                                              }
+        }
