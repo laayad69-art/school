@@ -335,17 +335,17 @@ footer a:hover { color: white; }
     .manager-card p { font-size: 0.85rem; line-height: 1.6; }
     .avatar-frame { width: 120px; height: 120px; margin-bottom: 15px; }
 
-    /* الإدارة - الوكلاء */
+    /* الإدارة - الوكلاء (معدل عشان يبقوا جنب بعض) */
     .deputies-grid { 
-        grid-template-columns: 1fr; 
-        gap: 15px;
-        padding: 0 10px;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+        padding: 0 5px;
     }
-    .deputy-card { padding: 20px 15px; }
-    .deputy-card .avatar-frame { width: 100px; height: 100px; margin-bottom: 12px; }
-    .deputy-card h3 { font-size: 1.1rem; }
-    .deputy-card .role { font-size: 0.85rem; }
-    .deputy-card p { font-size: 0.8rem; line-height: 1.6; }
+    .deputy-card { padding: 15px 10px; }
+    .deputy-card .avatar-frame { width: 80px; height: 80px; margin-bottom: 10px; border-width: 3px; }
+    .deputy-card h3 { font-size: 0.9rem; margin-bottom: 3px; }
+    .deputy-card .role { font-size: 0.75rem; margin-bottom: 8px; }
+    .deputy-card p { font-size: 0.7rem; line-height: 1.4; }
 
     .links-grid { grid-template-columns: 1fr; gap: 15px; }
     .link-card { padding: 20px 15px; }
@@ -365,5 +365,5 @@ footer a:hover { color: white; }
     header h1 { font-size: 1.1rem; }
     nav ul li a { font-size: 0.75rem; padding: 6px 8px; }
     .avatar-frame { width: 110px; height: 110px; }
-    .deputy-card .avatar-frame { width: 90px; height: 90px; }
-    }
+    .deputy-card .avatar-frame { width: 70px; height: 70px; }
+}
